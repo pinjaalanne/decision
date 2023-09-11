@@ -1,0 +1,121 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+    background-image: url(pexels-aleksandar-pasaric-1694000.jpg);
+    background-size: 1700px auto;
+    text-align: center;
+    font-family: "Philosopher", sans-serif;;
+    font-size: 15px;
+    color: rgb(234, 219, 239);
+}
+
+h1 {
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 55px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+div {
+    margin: 15px 0;
+}
+
+form {
+    margin-top: 30px;
+}
+
+#container {
+    margin: 10px auto;
+    width: 550px;
+}
+
+.wrap {
+    padding: 80px;
+    border-radius: 7px;
+    background-color: rgb(36, 25, 40);
+    text-align: center;
+}
+
+p {
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+label,
+input {
+   display: inline-block;
+}
+
+input {
+    width: 330px;
+    padding: 10px;
+    background-color:rgb(42, 27, 48);
+    color: rgb(234, 219, 239);
+    border: none;
+    border-radius: 2px;
+}
+
+input, 
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+::placeholder {
+    font-family: inherit;
+    font-style: italic;
+    font-weight: 500;
+    color: rgb(202, 190, 207);
+}
+
+#button {
+    margin: 20px 10px;
+    width: 100px;
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: rgb(71, 49, 80);
+    border: 2px none;
+    color:rgb(230, 204, 240);
+}
+
+#button:hover {
+    background-color: rgb(108, 78, 121);
+    box-shadow: 0 2px 2px 0 rgba(231, 213, 213, 0.24);
+}
+
+#reset {
+    margin: 10px 10px;
+    width: 100px;
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: rgb(71, 49, 80);
+    border: 2px none;
+    color: rgb(230, 204, 240);
+}
+
+#reset:hover {
+    background-color: rgb(108, 78, 121);
+    box-shadow: 0 2px 2px 0 rgba(231, 213, 213, 0.24);
+}
+
+#reply {
+    margin: 15px 0px;
+    font-style: italic;
+    font-size: 110%;
+}
+ 
