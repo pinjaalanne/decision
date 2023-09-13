@@ -4,6 +4,8 @@
    box-sizing: border-box;
 }
 
+/* Styling the main area */
+
 body {
     background-image: url(pexels-aleksandar-pasaric-1694000.jpg);
     background-size: 1700px auto;
@@ -15,16 +17,16 @@ body {
 
 h1 {
     margin-bottom: 32px;
-    text-align: center;
-    font-size: 55px;
+    font-size: 60px;
 }
 
 h2 {
     font-size: 20px;
 }
 
-div {
-    margin: 15px 0;
+p {
+    margin: 20px 0;
+    font-size: 16px; 
 }
 
 form {
@@ -33,32 +35,30 @@ form {
 
 #container {
     margin: 10px auto;
-    width: 550px;
+    width: 700px;
+    border: 5px ridge rgb(230, 204, 240);
+    border-radius: 40px;
 }
 
 .wrap {
-    padding: 80px;
-    border-radius: 7px;
-    background-color: rgb(36, 25, 40);
-    text-align: center;
-}
-
-p {
-    font-weight: 700;
-    margin-bottom: 30px;
+    padding: 50px;
+    border-radius: 40px;
+    background-color: rgb(24, 16, 28);
 }
 
 label {
-    margin-bottom: 10px;
+    text-align: left;
+    width: 150px;
 }
 
 label,
 input {
+   padding: 20px;
    display: inline-block;
 }
 
 input {
-    width: 330px;
+    width: 300px;
     padding: 10px;
     background-color:rgb(42, 27, 48);
     color: rgb(234, 219, 239);
@@ -75,11 +75,20 @@ button {
 ::placeholder {
     font-family: inherit;
     font-style: italic;
-    font-weight: 500;
     color: rgb(202, 190, 207);
 }
 
-#button {
+/* Adding some animation to the button */
+
+@keyframes example {
+    from {background-color:rgb(103, 82, 135)};
+    to {background-color:rgb(74, 45, 114)};
+  }
+
+button {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
     margin: 20px 10px;
     width: 100px;
     padding: 5px;
@@ -91,7 +100,7 @@ button {
     color:rgb(230, 204, 240);
 }
 
-#button:hover {
+button:hover {
     background-color: rgb(108, 78, 121);
     box-shadow: 0 2px 2px 0 rgba(231, 213, 213, 0.24);
 }
@@ -113,9 +122,18 @@ button {
     box-shadow: 0 2px 2px 0 rgba(231, 213, 213, 0.24);
 }
 
+/* Styling the reply box */
+
+#replybox {
+    padding: 20px;
+    margin: 10px 70px;
+    background-image: url(pexels-aleksandar-pasaric-1694000.jpg);
+    background-size: 1700px auto;
+    border-radius: 40px;
+    border: 5px ridge rgb(230, 204, 240);
+}
+
 #reply {
-    margin: 15px 0px;
     font-style: italic;
     font-size: 110%;
 }
- 

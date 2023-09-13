@@ -13,10 +13,10 @@
   <body>
     <div id="container">
       <div class="wrap">
-        <h1>What is on your mind?</h1>
-        <h2>Please ask me anything you want!</h2>
-        <h2>I will help you with your decision!</h2>
-        <form>
+        <h1>Decision Maker</h1>
+        <h2>Please let me help you with your decision!</h2>
+        <p>Just enter your name and question below:</p>
+        <form id="formbox">
           <div>
             <label for="userName">Your name</label>
             <input
@@ -35,12 +35,17 @@
               placeholder="Enter your question"
             />
           </div>
-          <button id="button" onclick="return decisionMaking()">
-            Help me!
-          </button>
-          <input type="reset" id="reset" />
         </form>
-        <p id="reply"></p>
+        <button onclick="return decisionMaking()">Help me!</button>
+        <input
+          type="button"
+          id="reset"
+          value="Try again"
+          onclick="resetForm()"
+        />
+        <div id="replybox">
+          <p id="reply">Hello! Please ask me anything!</p>
+        </div>
       </div>
     </div>
     <script src="main.js"></script>
