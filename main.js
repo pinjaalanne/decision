@@ -3,10 +3,10 @@ const decisionMaking = () => {
 // Get the data 
 
     const reply = document.querySelector('#reply')
+    const randomNumber = Math.floor(Math.random() * 10) + 1;
 
     let decisionStatements = '';
     
-    const randomNumber = Math.floor(Math.random() * 10) + 1;
 
 // Randomized decision statements
 
@@ -46,21 +46,21 @@ const decisionMaking = () => {
             break;
         }
     
-    // The result with user question and decision statement 
-    const userName = document.querySelector('#userName').value
-    const userQuestion = document.querySelector('#userQuestion').value
+        // The result with user question and decision statement 
+        const userName = document.querySelector('#userName').value
+        const userQuestion = document.querySelector('#userQuestion').value
 
         let text;
 
         userQuestion == '' ? text = `Please ask me a question!`: text = `Hello ${userName}! You asked: ${userQuestion} ${decisionStatements}`
         
         reply.textContent = text;
-        
+
         return false;
         
     }
     
-    /* Resetting to try again */
+    // Resetting to try again
     const resetForm = () => {  
         document.querySelector('#formbox').reset();
       }   
