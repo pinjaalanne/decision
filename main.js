@@ -64,5 +64,3 @@ const decisionMaking = () => {
     const resetForm = () => {  
         document.querySelector('#formbox').reset();
       }   
-  
-      
