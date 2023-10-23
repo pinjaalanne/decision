@@ -62,5 +62,5 @@ const decisionMaking = () => {
     
     // Resetting to try again
     const resetForm = () => {  
-        document.querySelector('#formbox').reset();
+        window.location.reload();
       }   
